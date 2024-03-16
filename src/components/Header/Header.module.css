@@ -1,0 +1,12 @@
+.container {
+  padding: .9rem;
+  padding-left: 22px;
+  font-size: 22px;
+  color: rgb(0, 177, 236);
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 600;
+  border-bottom: 2px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
