@@ -15,6 +15,8 @@ function Input({ inputHandler, locationHandler }) {
         const latitude = position.coords.latitude;
         const longitude = position.coords.longitude;
         locationHandler(latitude, longitude);
+      }, (e) => {
+        console.log("request declined!");
       });
     }
   }

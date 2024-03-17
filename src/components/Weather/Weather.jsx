@@ -4,7 +4,7 @@ import feelsImage from "../../assets/thermometer.png"
 import humidityImg from "../../assets/weather.png"
 
 
-function Weather() {
+function Weather({data}) {
   return (
     <>
       <div className={classes.container}>
@@ -12,16 +12,16 @@ function Weather() {
           src="https://cdn-icons-png.flaticon.com/512/6974/6974833.png"
           alt=""
         />
-        <h1>13°C</h1>
-        <h3>Broken Clouds</h3>
-        <h3 className={classes.place}>Kathmandu, Nepal</h3>
+        <h1>{data.main.temp.toFixed()}°C</h1>
+        <h3>{data.weather[0].main}</h3>
+        <h3 className={classes.place}>{data.name}, {data.sys.country}</h3>
         <div className={classes.weather_stats}>
           <div className={classes.feelslike}>
             <div className={classes.imgDiv}>
               <img src={feelsImage} alt="" />
             </div>
             <div className={classes.center}>
-              <h4>17°C</h4>
+              <h4>{data.main.feels_like.toFixed()}°C</h4>
               <p>Feels like</p>
             </div>
           </div>
@@ -30,7 +30,7 @@ function Weather() {
               <img src={humidityImg} alt="" />
             </div>
             <div className={classes.center}>
-              <h4>49%</h4>
+              <h4>{data.main.humidity}%</h4>
               <p>Humidity</p>
             </div>
           </div>

@@ -1,12 +1,27 @@
 .container {
   padding: .9rem;
-  padding-left: 22px;
-  font-size: 22px;
+  padding-left: 28px;
   color: rgb(0, 177, 236);
   font-family: "Didact Gothic", sans-serif;
   font-weight: 600;
   border-bottom: 2px solid #ddd;
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  gap: 10px;
+  
+}
+
+.container span{
+  font-size: 21px;
+}
+
+.container i{
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.container i:hover{
+  transition: 200ms;
+  transform:translateX(-4px);
 }
