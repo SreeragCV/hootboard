@@ -8,7 +8,7 @@ Follow these steps to run the application on your local machine:
 Node.js and npm installed on your machine <br>
 Clone the Repository <br>
 - git clone https://github.com/SreeragCV/hootboard.git <br>
-- cd weather-app
+- cd hootboard
 
 # Install Dependencies
 - npm install
