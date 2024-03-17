@@ -5,23 +5,22 @@ This is a simple weather application created using Vite and React. It allows use
 Follow these steps to run the application on your local machine:
 
 # Prerequisites
-Node.js and npm installed on your machine
-Clone the Repository
-git clone https://github.com/SreeragCV/hootboard.git
-cd weather-app
+Node.js and npm installed on your machine <br>
+Clone the Repository <br>
+- git clone https://github.com/SreeragCV/hootboard.git <br>
+- cd weather-app
 
 # Install Dependencies
-npm install
+- npm install
 
 # Start the Development Server
-npm run dev
+- npm run dev
 
 If it doesn't open automatically, you can access the application at http://localhost:5173/
 
 # Build for Production
-If you want to build the application for production, use the following command:
-
-# npm run build
+If you want to build the application for production, use the following command: <br>
+- npm run build <br>
 This command will generate optimized production-ready assets in the dist folder.
 
 # Additional Notes
