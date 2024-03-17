@@ -14,7 +14,7 @@ body{
 }
 
 .card{
-  width: 380px;
+  width: 360px;
   min-height: 250px;
   max-height: 590px;
   background-color: white;

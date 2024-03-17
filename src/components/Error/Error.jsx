@@ -18,7 +18,7 @@ function Error() {
       </div>
       <div className={classes.no_results}>
         <p>No results found..</p>
-        <p>please search again.</p>
+        <p>Please search again.</p>
       </div>
     </div>
   );

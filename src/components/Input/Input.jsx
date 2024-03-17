@@ -24,7 +24,7 @@ function Input({ inputHandler, locationHandler }) {
   return (
     <div className={classes.container}>
       <form onSubmit={handleSubmit} action="">
-        <input type="text" name="place" placeholder="Enter city name" />
+        <input autoFocus type="text" name="place" placeholder="Enter city name" />
       </form>
       <div className={classes.separator}>
         <div></div>

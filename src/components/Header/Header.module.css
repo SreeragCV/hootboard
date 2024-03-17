@@ -23,5 +23,5 @@
 
 .container i:hover{
   transition: 200ms;
-  transform:translateX(-4px);
+  transform:scale(1.3)
 }
