@@ -5,8 +5,8 @@
 }
 
 .loader {
-  border: 5px rgba(0, 208, 255, 0.808);
-  border-style: double;
+  border: 5px rgba(30, 197, 235, 0.808);
+  border-style: solid;
   border-radius: 50%;
   border-left-color: transparent;
   width: 36px;

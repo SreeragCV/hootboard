@@ -11,7 +11,7 @@ function App() {
   const [data, setData] = useState({});
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
-  const [showWeatherImage, setShowWeatherImage] = useState([])
+  const [showWeatherImage, setShowWeatherImage] = useState([]);
 
   const validData = Object.keys(data).length > 0;
   console.log(validData);
@@ -73,7 +73,6 @@ function App() {
     }
   }
 
-
   return (
     <>
       <div className="container">
@@ -85,7 +84,9 @@ function App() {
               locationHandler={handleLocatioWeather}
             />
           )}
-          {validData && !error && !loading && <Weather data={data} images={showWeatherImage} />}
+          {validData && !error && !loading && (
+            <Weather data={data} images={showWeatherImage} />
+          )}
           {error && !validData && <Error />}
           {loading && <Loader />}
         </div>

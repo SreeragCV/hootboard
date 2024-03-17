@@ -10,15 +10,15 @@ function Input({ inputHandler, locationHandler }) {
   }
 
   function handleLocation() {
-    if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition((position) => {
         const latitude = position.coords.latitude;
         const longitude = position.coords.longitude;
         locationHandler(latitude, longitude);
       }, (e) => {
-        console.log("request declined!");
+        window.alert("Please allow location access to display current weather.")
+        console.log('error');
       });
-    }
+    
   }
 
   return (
